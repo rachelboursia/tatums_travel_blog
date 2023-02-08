@@ -11,18 +11,22 @@ h1, h3{
 body{
     background-color: deeppink;
 }
-/* this adds a background to each article that has a gradient effect*/
+/* this adds a background to each article that has a gradient effect, rounds out the border, adds padding and box-shadow*/
 article {
+  border-radius: 0.75em;
     background: linear-gradient(to bottom, #f0f9ff, #cbebff);
+    padding: auto;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
   }  
-  /* this adds a background image to the head and includes size restrictions*/
-head{
-    background-image: url(https://images.unsplash.com/photo-1470125634816-ede3f51bbb42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2V0JTIwcGFub3JhbWF8ZW58MHx8MHx8&w=1000&q=80);
-    background-size: cover;
-}
-/* this changes the header text to white*/
+/* this changes the header text to white, rounds out the border, adds a background image to the head, adds padding, adds box-shadow, adds text-shadow, and includes size restrictions*/
 header {
+  background-image:url( https://images.unsplash.com/photo-1470125634816-ede3f51bbb42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2V0JTIwcGFub3JhbWF8ZW58MHx8MHx8&w=1000&q=80);
+  border-radius: 0.75em;
+  background-size: cover;
     color: white;
+    padding: auto;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
   }
   /* this change the a tag text to lightseagrean and has none text-decreation*/
   a {
@@ -33,3 +37,16 @@ header {
   a:hover {
     text-decoration: underline;
   }
+  /* this moves text to directly below photo, changes the size of the image, adds box-shadow, rounds out the border, adds a solid lightseagreen border and margin-bottom*/
+  img{
+    height: 20%;
+    display: block;
+    border: solid lightseagreen;
+    border-radius: 0.75em;
+    margin-bottom: auto;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  }
+  /* adds bottom border to header*/
+.subheading{
+  border-bottom: solid lightseagreen;
+}
